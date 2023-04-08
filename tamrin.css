@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: lightgray;
+    padding: 30px;
+}
+.main{
+    background-color: white;
+    display: flex;
+    border-radius: 50px;
+}
+.left {
+    width: 20%;
+    padding: 20px 40px;
+}
+.left hr{
+    width: 90%;
+    border: 0;
+    margin: 20px auto;
+    background-color: #ffb30066;
+    height: 1px;
+}
+.left img{
+    width: 60%;
+    border-radius: 50%;
+    margin: 10px 20%;
+}   
+.left h3{
+    text-align: center;
+    font-weight: 400;
+    margin: 5px auto;
+}
+.left h4{
+    text-align: center;
+    font-weight: 200;
+    margin: 5px auto;
+}
+.contact{
+    text-align: center;
+    margin: 20px 0;
+}
+.contact i{
+   background-color: #FFB400; 
+   border-radius: 50%;
+   margin: 3px;
+   padding: 4px;
+}
+
+.info .in{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.info .in p{
+    text-align: left;
+    background-color: #FFB400;
+    display: inline;    
+}
+
+.languages{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.languages .in, .skills .in{
+    display: flex;
+    justify-content: space-between;
+}
+.languages .progress,.skills .progress{
+    border: 2px solid #ffb30079;
+    border-radius: 20px;
+    width: 99%;
+    height: 3px;
+    padding: 1px;
+    margin: 10px 0;
+}
+.languages .progress .in,.skills .progress .in{
+    width: 100%;
+    height: 100%;
+    background-color: #FFB400;
+    border-radius: 20px;
+}
+.extra .in{
+    display: flex;
+    padding: 10px 0;
+}
+.extra .in i{
+    color: #FFB400;
+}
+.extra .in p{
+    margin-left: 10px;
+}
+.cvbotton{
+    text-align: center;
+    width:100%;
+    padding: 5px;
+    margin: 20px auto;
+    background-color: #FFB400;
+    border: 0px;
+    border-radius: 5px;
+}
+.bold1{
+    font-weight:600;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.right{
+    width: 80%;
+    background-color: #F1F0F6;
+    border-top-right-radius: 50px ;
+    border-bottom-right-radius: 50px ;
+}
+.first{
+    background-image: url("/Untitled.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    padding: 5% 5%;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    margin-bottom: 5%;
+}
+.first h1{
+    font-size: 2rem;
+}
+.first h2{
+    font-size: 2rem;
+}
+.first p{
+    margin: 20px 0;
+    width: 60%;
+    font-size: 0.8rem;
+}
+.first h2 span{
+    color: #FFB400;
+}
+.first button{
+    background-color: #FFB400;
+    padding: 10px 35px;
+    border-radius: 5px;
+    border: 0px;
+}
+.service{
+    text-align: center;
+    padding: 30px;
+}
+.container{
+    margin-top: 4%;
+    margin-left: 3%;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+}
+.service .p1, .education .p1{
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.service .p2, .education .p2{
+    text-align: center;
+    width: 60%;
+    font-weight: 200;
+    font-size: 0.9rem;
+    margin:5px auto;
+}
+.container .in{
+    width: 30%;
+    height: 150px;
+    margin: 5px;
+    padding-top: 20px;
+    padding: 5px;
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+}
+.container .in .p1{
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin:5px auto;
+
+}
+.container .in .p2{
+    text-align: center;
+    width: 100%;
+    font-weight: 200;
+    font-size: 0.9rem;
+    margin:5px auto;
+
+}
+
+.container .in img{
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+}
+.container .in a{
+    color: #FFB400;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.education {
+    margin: 5% auto;
+    padding:10px;
+    width: 80%;
+}
+.education .in{
+    background-color: white;
+    margin-top: 5%;
+}
+.education .in .inin{
+    display: flex;
+    text-align: center;
+}
+.education .in .inin .inleft{
+    width: 30%;
+    margin:auto;
+    text-align: center;
+    align-items: center;
+}
+.education .in .inin .inright{
+    width: 60%;
+    margin:30px auto;
+    text-align: left;
+}
+.education .bold{
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 20px auto;
+}
+.education .hilight{
+    background-color: #FFB400;
+    margin: 10px;
+}
+.education hr{
+    width: 80%;
+    background-color: #FFB400;
+    height: 1px;
+    border: 0;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1120px)and (min-width: 768px) {
+    .container .in{
+        width: 40%;
+        height: 200px;
+        margin-left:1%;
+        padding: 0 5px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    body{
+        padding: 5px;
+    }
+    .main{
+        display: block;
+    }
+    .left{
+        width: 80%;
+        margin-top: 20%;
+    }
+    .right{
+        width: 100%;
+    } 
+    .container{
+        padding: 0;
+    }  
+    .container .in{
+        width: 100%; 
+    }
+    .service .p2, .education .p2{
+        width: 9    0%;
+    }
+}

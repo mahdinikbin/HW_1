@@ -1,0 +1,324 @@
+$myfont :sans-serif;
+$mycolor:#FFB400;
+$mycolor2:lightgray;
+$mycolor3:#ffb30066;
+$mycolor4:#F1F0F6;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $myfont;
+}
+.main{
+    background-color: white;
+    display: flex;
+    border-radius: 50px;
+}
+
+.left{
+    width: 20%;
+    padding: 20px 40px;
+}
+.left{
+    hr{
+        width: 90%;
+        border: 0;
+        margin: 20px auto;
+        background-color: $mycolor3;
+        height: 1px; 
+    }
+    img{
+        width: 60%;
+        border-radius: 50%;
+        margin: 10px 20%;  
+    }
+    h3{
+        text-align: center;
+        font-weight: 400;
+        margin: 5px auto;  
+    }
+    h4{
+        text-align: center;
+        font-weight: 200;
+        margin: 5px auto; 
+    }
+}
+
+.contact{
+    text-align: center;
+    margin: 20px 0;
+
+    i{
+        background-color: $mycolor; 
+        border-radius: 50%;
+        margin: 3px;
+        padding: 4px; 
+    }
+}
+
+.info{
+    .in{
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+        p{
+            text-align: left;
+            background-color: $mycolor;
+            display: inline;   
+        }
+    }
+}
+@mixin in {
+    display: flex;
+    justify-content: space-between;
+  }
+@mixin prog{
+    border: 2px solid $mycolor3;
+    border-radius: 20px;
+    width: 99%;
+    height: 3px;
+    padding: 1px;
+    margin: 10px 0;
+}
+@mixin progin{
+    width: 100%;
+    height: 100%;
+    background-color: $mycolor;
+    border-radius: 20px; 
+}
+.languages{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .in{
+        @include in;
+    }
+    .progress{
+        @include prog;
+        .in{
+            @include progin;
+        }
+    }
+}
+.skills{
+    .in{
+        @include in;
+    }
+    .progress{
+        @include prog;
+        .in{
+            @include progin;
+        }
+    }
+}
+
+.extra{
+    .in{
+        display: flex;
+        padding: 10px 0;
+        i{
+            color: $mycolor;
+        }
+        p{
+            margin-left: 10px; 
+        }
+    }
+}
+.cvbotton{
+    text-align: center;
+    width:100%;
+    padding: 5px;
+    margin: 20px auto;
+    background-color: $mycolor;
+    border: 0px;
+    border-radius: 5px;
+}
+.bold1{
+    font-weight:600;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.right{
+    width: 80%;
+    background-color: $mycolor4;
+    border-top-right-radius: 50px ;
+    border-bottom-right-radius: 50px ;
+}
+$mysize:2rem;
+.first{
+    background-image: url("/Untitled.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    padding: 5% 5%;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    margin-bottom: 5%;
+
+    h1{
+        font-size: $mysize;
+    }
+    h2{
+        font-size: $mysize;
+        span{
+            color: $mycolor;
+        }
+    }
+    p{
+        margin: 20px 0;
+        width: 60%;
+        font-size: 0.8rem;
+    }
+    button{
+        background-color: $mycolor;
+        padding: 10px 35px;
+        border-radius: 5px;
+        border: 0px;
+    }
+}
+@mixin p1{
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 10px; 
+}
+@mixin p2{
+    text-align: center;
+    width: 60%;
+    font-weight: 200;
+    font-size: 0.9rem;
+    margin:5px auto;
+}
+.service{
+    text-align: center;
+    padding: 30px;
+    .p1{
+        @include p1;
+    }
+    .p2{
+        @include p2;
+    }
+}
+.education{
+    .p1{
+        @include p1;
+    }
+    .p2{
+        @include p2;
+    }
+    .in{
+        background-color: white;
+        margin-top: 5%;
+        .inin{
+            display: flex;
+            text-align: center;
+            .inleft{
+                width: 30%;
+                margin:auto;
+                text-align: center;
+                align-items: center;
+            }
+            .inright{
+                width: 60%;
+                margin:30px auto;
+                text-align: left;
+            }
+        }
+    }
+    .bold{
+        font-weight: 600;
+        font-size: 1rem;
+        margin: 20px auto;
+    }
+    .hilight{
+        background-color: $mycolor;
+        margin: 10px;
+    }
+    hr{
+        width: 80%;
+        background-color: $mycolor;
+        height: 1px;
+        border: 0;
+        margin: 0 auto;
+    }
+}
+
+.container{
+    margin-top: 4%;
+    margin-left: 3%;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    .in{
+        width: 30%;
+        height: 150px;
+        margin: 5px;
+        padding-top: 20px;
+        padding: 5px;
+        display: inline-block;
+        background-color: white;
+        text-align: center;
+        align-items: center;
+        .p1{
+            text-align: center;
+            width: 100%;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin:5px auto;
+        } 
+        .p2{
+            text-align: center;
+            width: 100%;
+            font-weight: 200;
+            font-size: 0.9rem;
+            margin:5px auto;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+            margin: 10px auto; 
+        }
+        a{
+            color: $mycolor;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    }
+}
+
+@media only screen and (max-width: 1120px)and (min-width: 768px) {
+    .container .in{
+        width: 40%;
+        height: 200px;
+        margin-left:1%;
+        padding: 0 5px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    body{
+        padding: 5px;
+    }
+    .main{
+        display: block;
+    }
+    .left{
+        width: 80%;
+        margin-top: 20%;
+    }
+    .right{
+        width: 100%;
+    } 
+    .container{
+        padding: 0;
+    }  
+    .container .in{
+        width: 100%; 
+    }
+    .service .p2, .education .p2{
+        width: 9    0%;
+    }
+}
